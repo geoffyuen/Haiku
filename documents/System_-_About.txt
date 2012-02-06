@@ -1,0 +1,13 @@
+<img src="http://i.imgur.com/lbOSC.png" style="width: 200px; height: auto; float: right; margin: 0 1em 0 0">
+
+### Audience
+
+- Mac users using Safari, Firefox and Chrome
+
+### Quick and dirty!
+
+Tested on Chrome, Firefox and Internet Explorer 8.
+
+Backend tested on Apache (Ubuntu 11.04, OS X 10.6) and PHP. No guarantees on how it works on IIS - probably not well at all.
+
+This CMS contains an index.php and markdown.php from <http://michelf.com/projects/php-markdown/>. That's it. No databases to mess around with.

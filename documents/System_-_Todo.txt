@@ -1,0 +1,21 @@
+- folder support
+- ' " support for filenames
+- <strike>ordered lists</strike>
+- image uploads <http://valums.com/ajax-upload/>
+- <strike>fix iphone</strike> Problem was iCab popup blocker
+- login
+- <strike>page title variable</strike>
+- <strike>move css, js in the docs folder so you can edit within the site? had to change file extension to dat for some reason</strike>
+- create folders if they don't exist
+- <strike>possible to create shortcut keys to edit and save?</strike>    
+Ctrl-E for edit, Ctrl-S for save, ESC to cancel
+- RSS feed
+- tagging system
+
+# Illegal characters for filenames
+
+[ ] / \ = + < > : ; " , * .
+
+### GD Extension for PHP
+
+    sudo apt-get install php5-gd

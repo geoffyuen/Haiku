@@ -1,0 +1,18 @@
+#### Type this:
+
+- start a line with # to create headlines. the more ## and your headline becomes smaller.
+- *italics* to get italics
+- **bold** to get bold
+- * bulleted text to get • bulleted text
+- *** three stars turns into a horizontal line
+- paragraphs must have a blank line before it
+- lines ending in two spaces force a line break
+- `[this will be a web link](http://tothiswebsite.com)` to get this will be a web link
+
+#### Keyboard Shortcuts
+
+- save, ctrl-s
+- edit, ctrl-e
+- cancel, esc
+
+[More detailed help](?p=Help)

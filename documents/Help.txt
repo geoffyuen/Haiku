@@ -1,0 +1,139 @@
+You can add new articles by clicking the New+ button. This will bring up an editor in which you can fill out all or some information. You must enter a Company Name as this will be used as a filename that the information will be saved under. Once saved, a page link will be located in the navigation list.
+
+There's also an edit button at the end of all articles. Clicking on it will bring up the editor. The *Notes* area allows you to enter certain codes to style your text using a system called Markdown. It's designed to be readable as plain text but when interpreted by the system it applies predetermined styles to beautify it. Some styles are applied to an entire paragraph or a selection of characters - much like InDesign paragraph/character styles. Any line that begins with a *special* character is probably applied to the entire paragraph.
+
+    If you see text on a yellow background it means that you're supposed to type this code like you see it.
+
+
+###Text Styling
+
+This is *italics*
+
+    This is *italics*
+
+
+This is **bold**
+
+    This is **bold**
+
+
+You'll need **two** returns (or one blank line before) to begin a new paragraph.
+
+To force a line break, end your text with **two** spaces.
+
+~~~
+This line will
+continue on one line.
+
+But this line  
+will not.
+~~~
+
+This line will
+continue on one line.
+
+But this line  
+will not.
+
+
+***
+
+# Headlines
+
+Headlines start with a # mark. You can use up to six hash marks. The more you use, the smaller the headline becomes.
+
+###This is a headline
+~~~
+###This is a headline
+~~~
+
+#This is a big headline
+~~~
+#This is a big headline
+~~~
+
+######This is more like a subhead
+~~~
+######This is more like a subhead
+~~~
+
+
+***
+
+###Bullets
+
+To begin a bulleted list start with a blank line and then type your bullet points beginning with an asterisk and a space. 
+
+~~~
+* bullet point one
+* bullet point two
+* bullet point three
+~~~
+
+Results in:
+
+* bullet point one
+* bullet point two
+* bullet point three
+
+You can also make numbered lists:
+
+~~~
+1. bullet point one
+2. bullet point two
+3. bullet point three
+~~~
+
+or if you're lazy:
+
+~~~
+1. bullet point one
+1. bullet point two
+1. bullet point three
+~~~
+
+
+Results in:
+
+1. bullet point one
+1. bullet point two
+1. bullet point three
+
+****
+
+###Links
+
+~~~
+<http://www.google.com>
+~~~
+or
+~~~
+[Any text you want here](http://www.google.com)
+~~~
+You must have the http prefix.
+
+****
+
+###Images
+
+Images have to be online at the moment. The code to display images is much like the second link code but an exclamation mark preceeds it:
+
+~~~
+![Optional alt text](http://www.google.ca/images/srpr/logo3w.png)
+~~~
+Results in:
+
+![Optional alt text](http://www.google.ca/images/srpr/logo3w.png)
+
+Use free image hosting websites like <http://imgur.com> or <http://min.us> to store your images
+
+***
+
+###Youtube
+
+You can embed Youtube videos by finding it's embed code through the video's Share/Embed button. Just paste the code on it's own line.
+
+    <iframe width="560" height="315" src="http://www.youtube.com/embed/a1YT3uoMhRg" frameborder="0" allowfullscreen></iframe>
+
+<iframe width="560" height="315" src="http://www.youtube.com/embed/a1YT3uoMhRg" frameborder="0" allowfullscreen="0"></iframe>
+

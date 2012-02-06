@@ -1,0 +1,22 @@
+Edit the text in these links. Just use one line of text though.
+
+### [Title of the site](?p=.title)
+
+### [Home Page](?p=.homepage) 
+
+The default page that displays when you enter the site.
+
+
+***
+
+
+Please don't fool around below unless you know what you're doing:
+
+### [css](?p=css)
+
+If you're proficient in CSS you can completely change the layout of the site by making changes here. 
+
+
+### [javascript](?p=js)
+
+Add jquery/javascript plug-ins here.

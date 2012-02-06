@@ -1,0 +1,11 @@
+<http://website>
+
+## FTP
+
+ftp.something.com
+
+Username: 
+
+Password: 
+
+## File Specs
