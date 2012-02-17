@@ -9,6 +9,9 @@ $name = array();
 /* your site's name/title */
 $title = file_get_contents($path['docs'].'.title.txt');
 
+/* init default page - used as 'home' page & page show after deletion */
+$defaultpage = file_get_contents($path['docs'].'.homepage.txt'); /* your default page (index.php)*/
+
 function convertname($rawname) {
 	global $name;
 	$name['display'] = str_replace("_"," ",$rawname);
@@ -67,7 +70,6 @@ if (isset($_POST['fname'])) {
 	if (isset($_GET['p'])) {
 		convertname($_GET['p']);
 	} else {
-		$defaultpage = file_get_contents($path['docs'].'.homepage.txt'); /* your default page (index.php)*/
 		convertname($defaultpage);
 	}
 	$content = displaycontent();
