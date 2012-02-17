@@ -128,7 +128,9 @@ border-radius: 8px;
 background: #c33;
 color: #000;
 }
-
+#announcement p, #warning p {
+margin-bottom: .1em;
+}
 #documents ol {
 margin: 0;
 

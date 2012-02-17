@@ -41,7 +41,7 @@ function displaycontent() {
 	$form['fnotes'] = file_get_contents($path['docs'].$name['file']);
 	$c = "<div id='content'>\n<h1>{$form['fname']}</h1>\n";
 	if ($form['fnotes'] !='')   $c .= "<div id='notes'>" . Markdown($form['fnotes']) . "</div>\n";
-	$c .= "<input type='button' value='Edit' id='editbtn'>\n</div>";
+	$c .= "<button value='Edit' id='editbtn' class='btn'><i class='icon-pencil'></i> Edit</button>\n</div>";
 
 	return $c;
 }
@@ -103,7 +103,7 @@ if (isset($_POST['fname'])) {
 <h1><a href="index.php"><?=$title?></a></h1>
 
 <div id="documents">
-<p><input type="button" value="New+" id="newbtn"></p>
+<p><button value="New" id="newbtn" class='btn'><i class='icon-file'></i> New</button></p>
 <p><input value="Search" id="search"></p>
 <? listdocs(); ?>
 </div>
@@ -127,12 +127,10 @@ if (isset($_POST['fname'])) {
 	<textarea name='fnotes' id='fnotes'><?=$form['fnotes']?></textarea>
 </li>
 
-<li id="forminteract">
-<input type="button" value="Cancel" id="fcancel">
-<!-- <input type="button" value="Clear" id="fcancel"> -->
-<input type="submit" value="Delete" name="delete" id="fdelete">
-<!-- <input type="button" value="Revert" id="frevert"> -->
-<input type="submit" value="Save" name="save" id="fsave">
+<li id="forminteract" class='btn-group'>
+<button type="button" value="Cancel" id="fcancel" class='btn'><i class='icon-arrow-left'></i> Cancel</button>
+<button type="submit" value="Delete" name="delete" id="fdelete" class='btn'><i class='icon-trash'></i> Delete</button>
+<button type="submit" value="Save" name="save" id="fsave" class='btn'><i class='icon-ok'></i> Save</button>
 </li>
 
 <li>
