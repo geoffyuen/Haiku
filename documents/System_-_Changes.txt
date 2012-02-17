@@ -1,0 +1,5 @@
+Feb 16, 2012
+
+- now using twitter bootstrap
+  - removed css font styling, now using bootstrap defaults
+  - html: replaced input buttons to buttons

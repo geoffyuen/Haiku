@@ -81,10 +81,10 @@ if (isset($_POST['fname'])) {
 <title><?=$name['display']?> - <?=$title?></title>
 <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
 
+<link rel="stylesheet" type="text/css" href="css/bootstrap.css">         
 <link rel="stylesheet" type="text/css" href="<?=$path['docs']?>css.css">         
 
 <script type="text/javascript" src="http://jqueryjs.googlecode.com/files/jquery-1.3.2.min.js"></script>    
-<script type="text/javascript" src="jquery.textarea.js"></script>    
 <script type="text/javascript" src="jwerty.js"></script>    
 <script type="text/javascript" src="<?=$path['docs']?>js.js"></script>    
 
