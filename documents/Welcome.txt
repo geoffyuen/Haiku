@@ -1,14 +1,12 @@
 <img src="http://i.imgur.com/1GH2w.png" style="float: left; margin: 0 1em 0 0">
 
-###It's like Wikipedia for the Creative Department!
+###Haiku is a flat-file note taking web app
 
-This website *was* meant to store information about the many printers and suppliers we use. Please record information such as FTP logins, pdf specifications, dieline formats, etc so all of use can share in the knowledge. But also use it to keep records of stock photo site logins, design related Youtube videos, website links or anything else you can think of.
+Create notes in Markdown markup, hit save and it appears in the navigation to the left. And because it uses markdown you can format your notes using anything that a web page can use and also embed regular html, css and javascript.
+
+Haiku was built using PHP, Markdown and Twitter Bootstrap.
 
 ###Getting Started
 
 Click a link to the left to get information or New+ to add 
 a new item in the sidebar. See [Help](?p=Help) to learn how to format your text.
-
-IP addresses are saved when editing files.
-
-This site is only available on the DF office network.
