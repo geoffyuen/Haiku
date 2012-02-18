@@ -26,6 +26,7 @@ function convertname($rawname) {
 function listdocs() {
 	global $path;
 	$documents = glob($path['docs'].'*.txt');
+	natcasesort($documents);
 	echo "<ol>\n";
 	foreach($documents as $p)
 	{
@@ -58,6 +59,9 @@ if (isset($_POST['fname'])) {
 		$x = file_put_contents($path['docs'].$name['file'], $_POST['fnotes']);
 		$content = displaycontent();
 	} else if ($_POST['delete']) {
+		if (!file_exists('trash')) {
+			mkdir('trash');
+		}
 		if (rename($path['docs'].$name['file'],$path['trash'].$name['file'])) {
 			$message = "<div id='announcement'><p>{$name['file']} deleted. Click to close.</p></div>";
 		} else {
