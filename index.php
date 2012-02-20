@@ -12,6 +12,14 @@ $title = file_get_contents($path['docs'].'.title.txt');
 /* init default page - used as 'home' page & page show after deletion */
 $defaultpage = file_get_contents($path['docs'].'.homepage.txt'); /* your default page (index.php)*/
 
+
+if (!file_exists('trash')) {
+	mkdir('trash');
+}
+if (!file_exists('thumbs')) {
+	mkdir('thumbs');
+}
+
 function convertname($rawname) {
 	global $name;
 	$name['display'] = str_replace("_"," ",$rawname);
