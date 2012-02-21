@@ -70,10 +70,17 @@ else {
 			#gallery * {font-size:12px}
 			#gallery a {
 				display: inline-block;
-				margin: 10px;
+				padding: 10px;
 				width: 150px;
 				text-align: center;
 				text-decoration: none;
+			}
+			#gallery img {
+			border: 7px solid #fff;
+
+  -webkit-box-shadow: 0 0 10px 0 #888; 
+     -moz-box-shadow: 0 0 10px 0 #888; 
+          box-shadow: 0 0 10px 0 #888; 
 			}
 		</style>
 	</head>
