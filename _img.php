@@ -37,6 +37,7 @@ function make_thumb($src,$dest,$desired_width) {
 $images_dir = 'img/';
 $thumbs_dir = 'thumb-';
 $thumbs_width = 100;
+$output = '';
 
 /** generate photo gallery **/
 $image_files = glob("{$images_dir}*.{jpg,gif,png}", GLOB_BRACE);
@@ -51,9 +52,34 @@ if(count($image_files)) {
 				make_thumb($file,$thumbnail_image,$thumbs_width);
 			}
 		}
-		echo '<a href="',$file,'" class="photo-link smoothbox" rel="gallery"><img src="',$thumbnail_image,'"></a>';
+		$nice = str_replace('_',' ',pathinfo($file,PATHINFO_BASENAME));
+		$output .= "<a href='$file'><img src='$thumbnail_image'><p>$nice</p></a>\n";
 	}
 }
 else {
-	echo '<p>There are no images in this gallery.</p>';
+	$output .= '<p>There are no images in this gallery.</p>';
 }
+?>
+<DOCTYPE html>
+<html>
+	<head>
+		<title></title>
+		<style>
+			html { font-family: sans-serif}
+			#gallery { font-size: 0}
+			#gallery * {font-size:12px}
+			#gallery a {
+				display: inline-block;
+				margin: 10px;
+				width: 150px;
+				text-align: center;
+				text-decoration: none;
+			}
+		</style>
+	</head>
+	<body>
+	<div id='gallery'>
+<?=$output?>
+	</div>
+	</body>
+</html>
