@@ -1,5 +1,7 @@
 <?php
 
+/* http://www.appelsiini.net/2009/10/html5-drag-and-drop-multiple-file-upload */
+
 $error_message[0] = "Unknown problem with upload.";
 $error_message[1] = "Uploaded file too large (load_max_filesize).";
 $error_message[2] = "Uploaded file too large (MAX_FILE_SIZE).";
